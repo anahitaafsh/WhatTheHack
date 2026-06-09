@@ -13,7 +13,7 @@
 
 Building an AI agent is only the first step. In production, teams need to answer harder questions: Why did the agent respond this way? Where is latency coming from? How many tokens are being consumed? Is response quality improving or degrading over time? Observability is how you answer those questions with data.
 
-In this challenge, you will implement observability end to end in your Challenge 05 notebook, following the same lifecycle demonstrated in the `azure-ai-foundry-observability-demo` repository: tracing, monitoring, continuous evaluation, and batch evaluation. You will instrument interactions on agents you already created in earlier challenges, inspect telemetry in Foundry and Azure Monitor, and evaluate quality with built-in evaluators.
+In this challenge, you will implement observability end to end in your Challenge 05 notebook, following the same lifecycle demonstrated in the `azure-ai-foundry-observability-demo` repository: tracing, monitoring, continuous evaluation, and batch evaluation. You will instrument interactions on agents you already created in earlier challenges, inspect telemetry in Foundry and Azure Monitor, and evaluate quality using a local teaching evaluator plus Foundry evaluation rules in the portal.
 
 By the end of this challenge, you will move from basic agent development to operational readiness, where behavior, safety, quality, and performance can be measured and improved continuously.
 
