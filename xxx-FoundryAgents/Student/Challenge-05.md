@@ -69,8 +69,8 @@ To complete this challenge successfully, you should be able to:
 
 - Demonstrate observability on at least one agent created in a previous challenge (not a new throwaway agent).
 - Show evidence of a real run against that existing agent, including captured `thread_id` and `run_id`.
-- Verify that traces are emitted from your notebook workflow and visible in Foundry trace views.
-- Demonstrate traceability by showing correlated spans for a multi-turn interaction.
+- Verify that traces are emitted (locally in the notebook and/or in Foundry Traces for your agent runs) and visible in the appropriate trace view.
+- Demonstrate traceability by inspecting span attributes across multiple turns (or nested spans if you add a parent "conversation" span) and relating them back to your `thread_id`/`run_id` evidence.
 - Verify monitoring views display token usage, latency, and success signals for your agent.
 - Demonstrate continuous evaluation is configured and produces results on generated traffic.
 - Verify batch evaluation runs successfully against a dataset and returns evaluator-level results.
