@@ -55,7 +55,7 @@ Use the notebook to complete the following implementation goals:
 ### Batch Evaluation
 
 - Run a batch evaluation using a curated test dataset in your notebook.
-- Evaluate results with built-in evaluators such as task adherence, coherence, and safety-related checks.
+- Evaluate results with the local teaching evaluator (task adherence), and discuss how you would extend evaluation with coherence/safety checks (either locally or via Foundry evaluators).
 - Compare per-query outcomes and summarize quality patterns you observe.
 
 ### Reflection
