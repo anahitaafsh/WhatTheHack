@@ -36,9 +36,9 @@ Use the notebook to complete the following implementation goals:
 - Add OpenTelemetry instrumentation to your agent client workflow.
 - Execute traceable interactions against your previously created agent.
 - Execute at least one real SDK run against that existing agent and capture the `thread_id` and `run_id` for evidence.
-- Enable trace propagation so related spans across client and service calls can be correlated.
-- Capture key telemetry, including run-level latency and token usage.
-- Record prompts, responses, and tool arguments in traces for learning purposes, and explain the privacy implications.
+- (Optional/Advanced) Explore trace propagation so you can correlate client-side spans with Foundry/AI Monitor traces.
+- Capture key telemetry (for example: latency and token usage) as stable span attributes.
+- Be deliberate about whether you record full prompts/responses/tool arguments in traces; discuss the privacy/compliance implications and prefer synthetic data for this lab.
 
 ### Monitoring and Operational Visibility
 
