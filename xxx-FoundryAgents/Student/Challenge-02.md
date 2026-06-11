@@ -16,7 +16,7 @@ In this challenge you will build a completely different agent — a **news brief
 
 ## Description
 
-This challenge has three parts: first you will use the Azure CLI to deploy a model to your Foundry project, then you will write a Python script that creates an agent backed by that model and has a conversation with it, and finally you will deploy that agent to your Azure resource using the CLI so it persists as a hosted, reusable endpoint.
+This challenge has two parts: first you will use the Azure CLI to deploy a model to your Foundry project, then you will write a Python script that creates an agent backed by that model and has a conversation with it.
 
 ### Part 1: Deploy the Model via Azure CLI
 
@@ -49,28 +49,11 @@ Your script should:
   - *"Give me a briefing on the latest developments in renewable energy."*
   - *"What are the key things happening in AI regulation right now?"*
 - Wait for each run to complete, then print the agent's response to the console
-- **Do NOT delete the agent at the end** — you will need it for Part 3
-
-### Part 3: Deploy the Agent via CLI
-
-Now that your agent exists in your Foundry project (you can verify it in the portal), use the Azure CLI to deploy it as a hosted agent on your Azure resource.
-
-In a real production workflow, you wouldn't just create agents in throwaway scripts — you would deploy them so they are accessible as persistent endpoints that other applications, APIs, or users can call.
-
-Using the Azure CLI:
-
-- List the agents in your Foundry project to find the `NewsAgent` you created in Part 2
-- Deploy the agent to your Azure resource so it is hosted and accessible
-- Verify the deployment succeeded by checking the agent's status via CLI
-- Confirm the deployed agent is visible in the Foundry portal under your project's agents/deployments section
-
-**Why deploy via CLI?** Just like model deployments, agent deployments should be automated. In a CI/CD pipeline, your code would create the agent definition and then a CLI or IaC step would deploy it to the target environment. This separation between "define" and "deploy" is a core pattern in production agent workflows.
 
 ### Key Concepts
 
 - **`AIProjectClient`**: The main client for interacting with your Foundry project. You initialize it with your project endpoint and credential.
 - **`DefaultAzureCredential`**: Passwordless authentication that automatically chains multiple credential sources (Azure CLI login, managed identity, etc.). No secrets in your code.
-- **Agent creation vs. deployment**: Creating an agent (via SDK) defines its configuration — name, model, instructions. Deploying an agent (via CLI) makes it a persistent, hosted endpoint on your Azure resource that can be called by other services.
 - **Thread → Message → Run → Response**: The conversation lifecycle. You create a thread, add a user message, create a run (which triggers the agent to respond), wait for the run to complete, then read the response messages.
 
 ## Success Criteria
@@ -82,9 +65,6 @@ To complete this challenge successfully, you should be able to:
 - Demonstrate the script authenticates using `DefaultAzureCredential` with no API keys or secrets in the code
 - Verify the agent is created with the name `NewsAgent`, connected to `gpt-5.1`, and has system instructions defining its news briefing persona
 - Show the agent's responses printed to the console for at least two different user messages
-- Demonstrate using the Azure CLI to deploy the `NewsAgent` to your Azure resource as a hosted agent
-- Verify the deployed agent is visible and accessible in the Foundry portal
-- Show the agent's deployment status via CLI
 
 ## Learning Resources
 
@@ -102,7 +82,5 @@ To complete this challenge successfully, you should be able to:
 - After creating a run, you need to poll or wait for it to complete before reading messages. Check the run's status for `completed` vs `failed`.
 - Use `python-dotenv` to load environment variables: `from dotenv import load_dotenv` then `load_dotenv()`.
 - Remember to handle the conversation lifecycle in order: create agent → create thread → add message → create run → wait for completion → read response.
-- For the CLI portions, `az ml` or `az ai` commands can help you manage both model and agent deployments. Use `az --help` to explore available subcommands for your Foundry project.
-- For Part 3, look into `az ai agent` or similar CLI commands for deploying agents. The Foundry portal's deployment section can also give you hints about what CLI parameters are needed.
-- Remember: in Part 2, do **not** delete the agent — you need it to still exist for the CLI deployment in Part 3.
+- For the CLI portion, `az ml` or `az ai` commands can help you manage model deployments. Use `az --help` to explore available subcommands for your Foundry project.
 
