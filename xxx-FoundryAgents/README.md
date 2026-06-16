@@ -20,12 +20,12 @@ In this hack you will be solving the common business problem that companies in t
 	 - Create and configure agents in the Microsoft Foundry portal, write system instructions, and test agent behavior in the playground.
 - Challenge 02: **[Build a News Agent with Code](Student/Challenge-02.md)**
 	 - Create and interact with a news briefing agent programmatically using the Agent Framework SDK and Python.
-- Challenge 03: **[Title of Challenge](Student/Challenge-03.md)**
-	 - Description of challenge
+- Challenge 03: **[Connect Your Agents to Tools](Student/Challenge-03.md)**
+	 - Ground portal and code-first agents with file search, code interpreter, function calling, and Azure AI Search.
 - Challenge 04: **[Deploy a Hosted Weather Agent](Student/Challenge-04.md)**
 	 - Build a weather agent with a custom tool, containerize it, deploy to Foundry, and invoke it
-- Challenge 05: **[Title of Challenge](Student/Challenge-05.md)**
-	 - Description of challenge
+- Challenge 05: **[Implement End-to-End Observability for Foundry Agents](Student/Challenge-05.md)**
+	 - Instrument an existing agent with tracing, monitoring, and evaluation workflows.
 - Challenge 06: **[Title of Challenge](Student/Challenge-06.md)**
 	 - Description of challenge
 - Challenge 07: **[Title of Challenge](Student/Challenge-07.md)**
