@@ -5,6 +5,16 @@
 ## Pre-requisites
 
 - Complete Challenge 03 -- you should be comfortable creating agents with the SDK and connecting tools.
+- A **`gpt-5.1` model deployment** must exist in your Foundry project. You created and verified this in [Challenge 02](./Challenge-02.md) (Part 1). The hosted agent calls this deployment at runtime via the `AZURE_AI_MODEL_DEPLOYMENT_NAME` environment variable, so if it is missing the deployed agent will return empty responses.
+
+**NOTE:** If you jumped straight to this challenge, confirm the deployment exists before you begin:
+```bash
+az cognitiveservices account deployment list \
+  --name <your-foundry-resource-name> \
+  --resource-group <your-resource-group> \
+  --query "[].name" -o table
+```
+If `gpt-5.1` is not listed, create it (see Challenge 02, Part 1) before deploying your hosted agent.
 
 ## Introduction
 
@@ -64,6 +74,7 @@ To complete this challenge successfully, you should be able to:
 - `FOUNDRY_PROJECT_ENDPOINT` is injected automatically by the platform at runtime. You only need it locally in your `.env` for development.
 - If `az acr build` produces encoding errors on Windows, use the `--no-logs` flag.
 - If deployment fails with permission errors, check that you have the **Foundry Project Manager** role at project scope.
+- The notebook grants your Foundry **project's managed identity** the `AcrPull` role on the container registry so the hosted-agent platform can pull your image. If provisioning fails with `ImageError: Failed to pull container image`, verify that role assignment exists and allow a minute or two for RBAC to propagate before retrying.
 - The notebook includes an idempotency guard -- if an active version already exists, it skips creation.
 
 ## Advanced Challenges (Optional)
