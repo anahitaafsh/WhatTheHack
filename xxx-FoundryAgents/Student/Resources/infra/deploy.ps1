@@ -127,7 +127,7 @@ AZURE_LOCATION=$Location
 
 # --- Microsoft Foundry ---
 AZURE_AI_FOUNDRY_RESOURCE_NAME=$FoundryResourceName
-AZURE_AI_FOUNDRY_ENDPOINT=$FoundryEndpoint
+AZURE_AI_FOUNDRY_ENDPOINT=https://$FoundryResourceName.services.ai.azure.com/api/projects/$FoundryProjectName
 AZURE_AI_PROJECT_NAME=$FoundryProjectName
 
 # --- Model Deployment ---
