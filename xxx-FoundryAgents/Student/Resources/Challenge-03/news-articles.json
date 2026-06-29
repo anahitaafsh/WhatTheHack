@@ -1,0 +1,112 @@
+[
+    {
+        "id": "news-001",
+        "headline": "Barcelona Announces Primavera Sound 2026 Lineup",
+        "summary": "Primavera Sound returns to Parc del Fòrum from June 5-7, 2026, featuring over 200 artists across 12 stages. Early bird tickets are sold out, but general admission remains available at €225. Organizers expect 200,000 attendees across the three-day festival.",
+        "category": "events",
+        "region": "Europe",
+        "city": "Barcelona",
+        "country": "Spain",
+        "date": "2026-05-15",
+        "source": "European Music Weekly"
+    },
+    {
+        "id": "news-002",
+        "headline": "EU Introduces New Digital Travel Authorization for Non-EU Visitors",
+        "summary": "Starting September 2026, travelers from visa-exempt countries will need an ETIAS (European Travel Information and Authorisation System) authorization to enter the Schengen Area. The application costs €7 and is valid for three years. Travelers should apply at least 72 hours before departure.",
+        "category": "travel_advisory",
+        "region": "Europe",
+        "city": null,
+        "country": null,
+        "date": "2026-06-01",
+        "source": "EU Travel Authority"
+    },
+    {
+        "id": "news-003",
+        "headline": "Tokyo Celebrates Summer Festival Season with Fireworks and Street Fairs",
+        "summary": "Tokyo's famous Sumida River Fireworks Festival is scheduled for July 26, 2026, with over 20,000 fireworks launched. Additional summer festivals include the Koenji Awa Odori (August 22-23) and Asakusa Samba Carnival (August 29). Hotels near festival areas are booking up fast.",
+        "category": "events",
+        "region": "Asia",
+        "city": "Tokyo",
+        "country": "Japan",
+        "date": "2026-06-10",
+        "source": "Japan Travel News"
+    },
+    {
+        "id": "news-004",
+        "headline": "Airline Strike Disrupts Flights Across Southern Europe",
+        "summary": "Air traffic controllers in France and Italy have announced a 48-hour strike starting June 20, 2026. Airlines including Air France, Ryanair, and EasyJet are expected to cancel up to 30% of flights. Travelers are advised to check their flight status and consider rebooking through alternative airports.",
+        "category": "travel_advisory",
+        "region": "Europe",
+        "city": null,
+        "country": "France",
+        "date": "2026-06-12",
+        "source": "Aviation News Network"
+    },
+    {
+        "id": "news-005",
+        "headline": "Austin City Limits Music Festival Releases 2026 Dates",
+        "summary": "Austin City Limits (ACL) Festival will take place October 2-4 and October 9-11, 2026 at Zilker Park. Three-day general admission passes start at $295. The festival is expected to draw 75,000 attendees per day, with significant hotel demand in downtown Austin and South Congress areas.",
+        "category": "events",
+        "region": "North America",
+        "city": "Austin",
+        "country": "United States",
+        "date": "2026-05-20",
+        "source": "Austin Chronicle"
+    },
+    {
+        "id": "news-006",
+        "headline": "Thailand Extends Visa-Free Stay for Tourists to 60 Days",
+        "summary": "Thailand has permanently extended the visa-free stay for tourists from 53 countries to 60 days, up from the previous 30 days. The policy aims to boost tourism recovery. Travelers can also apply for a 30-day extension at local immigration offices for an additional 1,900 baht fee.",
+        "category": "travel_advisory",
+        "region": "Asia",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "date": "2026-06-05",
+        "source": "Southeast Asia Travel Report"
+    },
+    {
+        "id": "news-007",
+        "headline": "Barcelona's La Mercè Festival Set for September 2026",
+        "summary": "Barcelona's largest street festival, La Mercè, will run September 24-27, 2026. The free festival includes concerts, parades, fireworks at Montjuïc, human towers (castells), and the famous fire run (correfoc). Over 1.5 million people attended last year's edition.",
+        "category": "events",
+        "region": "Europe",
+        "city": "Barcelona",
+        "country": "Spain",
+        "date": "2026-06-08",
+        "source": "Barcelona City Council"
+    },
+    {
+        "id": "news-008",
+        "headline": "CDC Issues Updated Health Advisory for Travelers to Central America",
+        "summary": "The CDC has updated its travel health notice for Guatemala, Honduras, and El Salvador due to increased dengue fever cases. Travelers are advised to use insect repellent, wear long sleeves, and stay in air-conditioned accommodations. The advisory is at Level 2 (Practice Enhanced Precautions).",
+        "category": "travel_advisory",
+        "region": "Central America",
+        "city": null,
+        "country": null,
+        "date": "2026-06-11",
+        "source": "CDC Travel Health"
+    },
+    {
+        "id": "news-009",
+        "headline": "Tokyo Olympics Legacy: New Sports Tourism Packages Available",
+        "summary": "Tourism operators in Tokyo are offering new sports-themed tour packages that visit Olympic venues in Odaiba, the National Stadium, and the Ariake area. Packages include guided tours, sports experiences, and exclusive access to training facilities. Prices start at ¥15,000 per person.",
+        "category": "tourism",
+        "region": "Asia",
+        "city": "Tokyo",
+        "country": "Japan",
+        "date": "2026-06-03",
+        "source": "Japan National Tourism Organization"
+    },
+    {
+        "id": "news-010",
+        "headline": "Texas State Fair 2026 Preview: New Attractions and Record Attendance Expected",
+        "summary": "The State Fair of Texas in Dallas (September 25 - October 18, 2026) unveils new attractions including an expanded auto show and new fried food competitions. Last year's fair drew 2.3 million visitors. General admission is $20, with discount days available on select Tuesdays and Thursdays.",
+        "category": "events",
+        "region": "North America",
+        "city": "Dallas",
+        "country": "United States",
+        "date": "2026-06-14",
+        "source": "Dallas Morning News"
+    }
+]
