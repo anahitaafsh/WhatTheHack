@@ -192,6 +192,59 @@ After deployment, navigate to the Microsoft Foundry portal to explore your proje
 - You should see your Foundry Resource listed — click into it
 - Select your **Foundry Project** to access the project workspace where you can manage models, deployments, agents, and other resources throughout this hack
 
+### Deploy the GPT-5.1 Model
+
+You need to deploy the **gpt-5.1** model to your Foundry Project so it is available for the agents you will build in subsequent challenges.
+
+#### Option A: Deploy via the Microsoft Foundry Portal (UI)
+
+1. In the [Microsoft Foundry portal](https://ai.azure.com), navigate to your **Foundry Project**.
+2. In the left navigation, select **Models + endpoints** → **+ Deploy model** → **Deploy base model**.
+3. In the model catalog, search for **gpt-5.1** and select it.
+4. Click **Confirm** to open the deployment configuration.
+5. Configure the deployment:
+   - **Deployment name:** `gpt-5.1` (use this exact name so it matches the `.env` configuration)
+   - **Deployment type:** Global Standard (recommended) or Standard
+   - **Tokens per Minute Rate Limit:** Set to at least `50k` (adjust based on your subscription quota)
+6. Click **Deploy** and wait for the status to show **Succeeded**.
+
+#### Option B: Deploy via Azure CLI
+
+Run the following command from your terminal (replace the placeholder values with your resource names from the deployment outputs):
+
+```bash
+az ai model deployment create \
+  --resource-group "<your-resource-group>" \
+  --workspace-name "<your-foundry-project-name>" \
+  --name "gpt-5.1" \
+  --model-id "azureml://registries/azure-openai/models/gpt-5.1" \
+  --model-format OpenAI \
+  --sku-name "GlobalStandard" \
+  --sku-capacity 50
+```
+
+**PowerShell (Windows):**
+```powershell
+az ai model deployment create `
+  --resource-group "<your-resource-group>" `
+  --workspace-name "<your-foundry-project-name>" `
+  --name "gpt-5.1" `
+  --model-id "azureml://registries/azure-openai/models/gpt-5.1" `
+  --model-format OpenAI `
+  --sku-name "GlobalStandard" `
+  --sku-capacity 50
+```
+
+#### Update Your .env File
+
+After deploying the model, ensure your `.env` file includes the deployment name:
+
+```
+AZURE_OPENAI_DEPLOYMENT_NAME=gpt-5.1
+```
+
+This value should already be set if the infrastructure deployment script generated it. Verify it matches the deployment name you used above.
+
 ## Success Criteria
 
 To complete this challenge successfully, you should be able to:
@@ -203,15 +256,18 @@ To complete this challenge successfully, you should be able to:
   - Microsoft Foundry Project (under the Foundry Resource)
   - Azure Storage Account
   - Azure AI Search service
-- Verify that the auto-generated `.env` file exists and all values are populated (no `<placeholder>` values remain) by comparing it to `.env.sample`.
+- Verify that the **gpt-5.1** model is deployed in your Foundry Project and shows a status of **Succeeded** under **Models + endpoints**.
+- Verify that the auto-generated `.env` file exists and all values are populated (no `<placeholder>` values remain), including `AZURE_OPENAI_DEPLOYMENT_NAME=gpt-5.1`.
 - Verify that you can sign in to [ai.azure.com](https://ai.azure.com) and navigate to your Foundry Project.
 - Verify that you have a Python 3.10+ virtual environment with all packages from `requirements.txt` installed.
 
 ## Learning Resources
 
 - [What is Azure AI Foundry?](https://learn.microsoft.com/azure/ai-studio/what-is-ai-studio)
-- [Microsoft Agent Framework SDK overview](https://learn.microsoft.com/azure/ai-services/agents/overview)
+- [Deploy models in Azure AI Foundry](https://learn.microsoft.com/azure/ai-studio/how-to/deploy-models)
+- [Azure OpenAI model deployment guide](https://learn.microsoft.com/azure/ai-services/openai/how-to/create-resource)
 - [Azure AI Projects SDK for Python](https://learn.microsoft.com/python/api/overview/azure/ai-projects-readme)
+- [Microsoft Agent Framework SDK overview](https://learn.microsoft.com/azure/ai-services/agents/overview)
 - [MCP (Model Context Protocol) specification](https://modelcontextprotocol.io/)
 - [FastMCP — Build MCP servers in Python](https://github.com/jlowin/fastmcp)
 - [Azure AI Search documentation](https://learn.microsoft.com/azure/search/)
