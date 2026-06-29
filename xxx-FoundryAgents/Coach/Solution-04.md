@@ -28,6 +28,8 @@ The 10 blanks focus on:
 
 - **Repeated runs create new versions**: Each `create_version()` call creates a new version (v1, v2, v3...). The notebook has an idempotency guard using `list_versions()` that skips creation if an active version exists. If students want to force a fresh deploy, they can delete existing versions first.
 
+- **ImageError / cannot pull container image**: The hosted-agent platform pulls the image using the **Foundry project's managed identity**, not the student's user credential. That identity needs the `AcrPull` role on the registry. The ACR creation cell now assigns this automatically, but if a team hits `ImageError: Failed to pull container image`, confirm the role assignment exists on the registry for the project identity and allow 1-2 minutes for RBAC propagation. This is the most common cause of a version that reaches `creating` and then flips to `failed`.
+
 - **Agent takes time to become active**: After `create_version()`, the agent status starts as `creating` and takes 30-60 seconds to become `active`. The polling cell handles this.
 
 ### Coaching Tips

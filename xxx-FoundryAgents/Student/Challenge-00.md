@@ -155,11 +155,11 @@ cd infra
 ```
 
 The script will:
-1. Verify you are logged in to Azure CLI (and prompt `az login` if not)
-2. Confirm your active subscription
-3. Register required Azure resource providers
-4. Deploy the Bicep template at subscription scope (creating the resource group and all resources)
-5. Print the deployment outputs you need for configuration
+- Verify you are logged in to Azure CLI and prompt `az login` if needed
+- Confirm your active subscription
+- Register required Azure resource providers
+- Deploy the Bicep template at subscription scope, creating the resource group and all resources
+- Print the deployment outputs you need for configuration
 
 ### Set Up Python Environment (Local Workstation Only)
 

@@ -12,22 +12,22 @@ This hack includes an optional [lecture presentation](Lectures.pptx) that featur
 
 - Challenge 00: **[Prerequisites - Ready, Set, GO!](./Solution-00.md)**
 	 - Prepare your workstation to work with Azure.
-- Challenge 01: **[Title of Challenge](./Solution-01.md)**
-	 - Description of challenge
-- Challenge 02: **[Title of Challenge](./Solution-02.md)**
-	 - Description of challenge
-- Challenge 03: **[Title of Challenge](./Solution-03.md)**
-	 - Description of challenge
+- Challenge 01: **[Your First Foundry Agent (Portal)](./Solution-01.md)**
+   - Create and configure agents in the Microsoft Foundry portal, write system instructions, and test agent behavior in the playground.
+- Challenge 02: **[Build a News Agent with Code](./Solution-02.md)**
+   - Create and interact with a news briefing agent programmatically using the Agent Framework SDK and Python.
+- Challenge 03: **[Connect Your Agents to Tools](./Solution-03.md)**
+   - Ground portal and code-first agents with file search, code interpreter, function calling, and Azure AI Search.
 - Challenge 04: **[Deploy a Hosted Weather Agent](./Solution-04.md)**
 	 - Build a weather agent with a custom tool, containerize it, deploy to Foundry, and invoke it
-- Challenge 05: **[Title of Challenge](./Solution-05.md)**
-	 - Description of challenge
+- Challenge 05: **[Implement End-to-End Observability for Foundry Agents](./Solution-05.md)**
+   - Instrument an existing agent with tracing, monitoring, and evaluation workflows.
 - Challenge 06: **[Title of Challenge](./Solution-06.md)**
-	 - Description of challenge
+   - Description of challenge
 - Challenge 07: **[Title of Challenge](./Solution-07.md)**
-	 - Description of challenge
+   - Description of challenge
 - Challenge 08: **[Title of Challenge](./Solution-08.md)**
-	 - Description of challenge
+   - Description of challenge
 
 ## Coach Prerequisites
 
