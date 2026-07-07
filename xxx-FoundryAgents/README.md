@@ -26,8 +26,8 @@ In this hack you will be solving the common business problem that companies in t
 	 - Build a weather agent with a custom tool, containerize it, deploy to Foundry, and invoke it
 - Challenge 05: **[Implement End-to-End Observability for Foundry Agents](Student/Challenge-05.md)**
 	 - Instrument an existing agent with tracing, monitoring, and evaluation workflows.
-- Challenge 06: **[Title of Challenge](Student/Challenge-06.md)**
-	 - Description of challenge
+- Challenge 06: **[Agent Harness Fundamentals: From Agent to Production Agent](Student/Challenge-06.md)**
+	 - Build the runtime harness capabilities that make agents reliable, governable, and production-ready.
 - Challenge 07: **[Title of Challenge](Student/Challenge-07.md)**
 	 - Description of challenge
 - Challenge 08: **[Title of Challenge](Student/Challenge-08.md)**

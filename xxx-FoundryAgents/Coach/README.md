@@ -22,8 +22,8 @@ This hack includes an optional [lecture presentation](Lectures.pptx) that featur
 	 - Build a weather agent with a custom tool, containerize it, deploy to Foundry, and invoke it
 - Challenge 05: **[Implement End-to-End Observability for Foundry Agents](./Solution-05.md)**
    - Instrument an existing agent with tracing, monitoring, and evaluation workflows.
-- Challenge 06: **[Title of Challenge](./Solution-06.md)**
-   - Description of challenge
+- Challenge 06: **[Agent Harness Fundamentals: From Agent to Production Agent](./Solution-06.md)**
+   - Coach students through agent loops, tools, memory, planning, approvals, and observability as harness responsibilities.
 - Challenge 07: **[Title of Challenge](./Solution-07.md)**
    - Description of challenge
 - Challenge 08: **[Title of Challenge](./Solution-08.md)**
